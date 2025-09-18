@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  marisa-stuff:
+    image: ghcr.io/foxythebot/marisastuff:latest
+    container_name: marisa-stuff
+    restart: unless-stopped
+    volumes:
+      - /opt/marisa-stuff:/opt/marisa-stuff
+    environment:
+      JAVA_OPTS: "-Xms256M -Xmx512M"
+    ports:
+      - "5000:5000"
