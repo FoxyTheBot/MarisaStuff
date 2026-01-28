@@ -26,7 +26,7 @@ class MarisaStuffServerInstance(
     config: ServerConfig
 ) {
     companion object {
-        private const val STUFF_FOLDER = "C:\\Users\\WinG4merBR\\Downloads"
+        private const val STUFF_FOLDER = "/opt/marisa-stuff"
     }
 
     private val server = embeddedServer(Netty, port = config.port) {
