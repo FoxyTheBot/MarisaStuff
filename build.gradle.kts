@@ -20,6 +20,10 @@ dependencies {
     implementation("io.ktor:ktor-server-core:${Versions.KTOR}")
     implementation("io.ktor:ktor-server-content-negotiation:${Versions.KTOR}")
     implementation("io.ktor:ktor-server-auth:${Versions.KTOR}")
+    implementation("io.ktor:ktor-server-compression:${Versions.KTOR}")
+
+    // Compression
+    implementation("net.coobird:thumbnailator:0.4.20")
 
     // Logging
     implementation("ch.qos.logback:logback-classic:${Versions.LOGBACK}")
